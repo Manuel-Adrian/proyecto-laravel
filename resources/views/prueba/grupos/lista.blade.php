@@ -18,8 +18,8 @@
             <tr>
                 <td>{{ $grupo->id }}</td>
                 <td>{{ $grupo->clave }}</td>
-                <td>{{ $grupo->turnos->horario }}</td>
-                <td>{{ $grupo->semestres->grado }}</td>
+                <td>{{ $grupo->horario }}</td>
+                <td>{{ $grupo->grado }}</td>
                 <td> 
                 <form action="{{ route('eliminarGrupo',$grupo->id) }}" method="POST">
                       <a href="{{ route('editarGrupo',$grupo->id) }}" class="btn btn-warning btn-sm">Editar</a>

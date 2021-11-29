@@ -15,13 +15,13 @@ class GrupoController extends Controller
 {
     public function listaGrupos()
     {
-        $grupos=Grupos::select('id', 'clave', 'turnos_id','semestres_id')->orderBY('id', 'ASC')->get();
+        //$grupos=Grupos::select('id', 'clave', 'turnos_id','semestres_id')->orderBY('id', 'ASC')->get();
         
-        /*$grupos = DB::table('grupos')
+        $grupos = DB::table('grupos')
             ->join('turnos', 'turnos.id', '=' , 'grupos.turnos_id')
             ->join('semestres', 'semestres.id', '=' , 'grupos.semestres_id')
-            ->select('grupos.id', 'grupos.clave',' semestres.grado', 'turnos.horario')
-            ->orderBY('grupos.id','DESC')->get();*/
+            ->select('grupos.id', 'grupos.clave' ,'semestres.grado', 'turnos.horario')
+            ->orderBY('grupos.id','DESC')->get();
             //dd($grupos);
 
         return view('prueba.grupos.lista', compact('grupos'));

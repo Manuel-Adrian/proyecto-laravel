@@ -16,9 +16,9 @@
             @foreach ($grupoEstudiantes as $grupoEstudiante)
                 <tr>
                     <td>{{ $grupoEstudiante->id }}</td>
-                    <td>{{ $grupoEstudiante->grupos->clave}}</td>
-                    <td>{{ $grupoEstudiante->estudiantes->nombre}} {{ $grupoEstudiante->estudiantes->apellido_paterno}}
-                    {{ $grupoEstudiante->estudiantes->apellido_materno}}</td>
+                    <td>{{ $grupoEstudiante->clave}}</td>
+                    <td>{{ $grupoEstudiante->nombre}} {{ $grupoEstudiante->apellido_paterno}}
+                    {{ $grupoEstudiante->apellido_materno}}</td>
                     <td> 
                     <form action="{{ route('eliminarGrupoEstudiante',$grupoEstudiante->id) }}" method="POST">
                         <a href="{{ route('editarGrupoEstudiante',$grupoEstudiante->id) }}" class="btn btn-warning btn-sm">Editar</a>

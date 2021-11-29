@@ -14,12 +14,12 @@ class GrupoEstudianteController extends Controller
 {
     public function listaGruposEstudiantes()
     {
-        $grupoEstudiantes=GruposEstudiantes::select('id','grupos_id','estudiantes_id')->orderBY('id','ASC')->get();
-        /*$grupoEstudiantes = DB::table('grupos_estudiantes')
+        //$grupoEstudiantes=GruposEstudiantes::select('id','grupos_id','estudiantes_id')->orderBY('id','ASC')->get();
+        $grupoEstudiantes = DB::table('grupos_estudiantes')
             ->join('estudiantes', 'estudiantes.id', '=', 'grupos_estudiantes.estudiantes_id')
             ->join('grupos', 'grupos.id', '=', 'grupos_estudiantes.grupos_id')
             ->select('grupos_estudiantes.id', 'estudiantes.nombre', 'estudiantes.apellido_paterno',
-                'estudiantes.apellido_materno', 'grupos.clave')->orderBY('grupos_estudiantes.id', 'DESC')->get();*/
+                'estudiantes.apellido_materno', 'grupos.clave')->orderBY('grupos_estudiantes.id', 'DESC')->get();
              //dd($grupoEstudiantes);
         
         return view('prueba.gruposEstudiantes.lista',compact('grupoEstudiantes'));
