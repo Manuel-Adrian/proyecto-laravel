@@ -10,11 +10,11 @@ let boton= document.getElementById("btnEnviar");
 			errorHorario.style.color="green";
 		 
 	
-	}else{
-			
-		errorHorario.innerText="Completa el campo Horario";
-		 errorHorario.style.color="red";	
-		e.preventDefault();
-	}
+		}else{
+				
+			errorHorario.innerText="Completa el campo Horario";
+			 errorHorario.style.color="red";	
+			e.preventDefault();
+		}
 		
 	});

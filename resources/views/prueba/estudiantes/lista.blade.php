@@ -29,14 +29,15 @@
                     <td>{{ $estudiante->telefono }}</td>
                     <td>
                        
-                    <form action="{{ route('eliminarEstudiante',$estudiante->id) }}" method="POST">
-                        <a href="{{ route('editarEstudiante',$estudiante->id) }}" class="btn btn-warning btn-sm">Editar</a>
-                        @csrf
-                        <input type="submit" value="Eliminar" class="btn btn-danger btn-sm"> <br>
-                    </form> 
+                        <form action="{{ route('eliminarEstudiante',$estudiante->id) }}" method="POST">
+                            <a href="{{ route('editarEstudiante',$estudiante->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                            @csrf
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm"> <br>
+                        </form> 
                         <center>
                             <a href="{{ route('verEstudiante',$estudiante->id) }}" class="btn btn-info btn-sm">Ver</a>
                         </center>
+                        
                     </td>
                 </tr>
 

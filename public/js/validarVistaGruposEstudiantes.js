@@ -12,12 +12,12 @@ let  boton= document.getElementById("btnEnviar");
 			 errorGruposId.style.color="red";	
 			 e.preventDefault();
 	
-	}else{
-		
-		errorGruposId.innerText="Bien Grupos";
-		errorGruposId.style.color="green";	
-		
-	}
+		}else{
+			
+			errorGruposId.innerText="Bien Grupos";
+			errorGruposId.style.color="green";	
+			
+		}
 		
 	validaestudiantesId(e);
 	

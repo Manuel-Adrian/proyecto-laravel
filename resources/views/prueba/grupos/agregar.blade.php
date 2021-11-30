@@ -7,9 +7,12 @@
             @csrf
             <div>
                 <label class="form-label">INGRESE UN NUEVO GRUPO</label>
-                <input type="text" class="form-control text-uppercase"  placeholder="Ejemplo C-988" name="clave" 
-                title="Ingresa la primera letra mayuscula, gúión y tres cifras (Ejemplo A-789)" id="clave" required 
-                pattern="[A-Za-z]-([0-9]{3})" value="{{ old('clave') }}"><br>
+                <input type="text" class="form-control text-uppercase"  
+                    placeholder="Ejemplo C-988" name="clave" 
+                    title="Ingresa la primera letra mayuscula, gúión y tres cifras (Ejemplo A-789)" id="clave" 
+                    required pattern="[A-Za-z]-([0-9]{3})" 
+                    value="{{ old('clave') }}"
+                ><br>
                 <span id="errorClave"></span>
                 @error('clave')
                         <div class="alert alert-danger">

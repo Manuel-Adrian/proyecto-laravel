@@ -21,14 +21,15 @@
                 <td>{{ $grupo->horario }}</td>
                 <td>{{ $grupo->grado }}</td>
                 <td> 
-                <form action="{{ route('eliminarGrupo',$grupo->id) }}" method="POST">
-                      <a href="{{ route('editarGrupo',$grupo->id) }}" class="btn btn-warning btn-sm">Editar</a>
-                      @csrf
-                      <input type="submit" value="Eliminar" class="btn btn-danger btn-sm"> <br>
+                    <form action="{{ route('eliminarGrupo',$grupo->id) }}" method="POST">
+                          <a href="{{ route('editarGrupo',$grupo->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                          @csrf
+                          <input type="submit" value="Eliminar" class="btn btn-danger btn-sm"> <br>
+                     </form>
                 </td>
             </tr>
               @endforeach    
         </tbody>
     </table>
-                </form>
+               
 @endsection

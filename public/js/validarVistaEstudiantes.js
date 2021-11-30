@@ -28,13 +28,13 @@ let  boton= document.getElementById("btnEnviar");
 			errorNombre.innerText="Bien Nombre";
 			errorNombre.style.color="green";	
 	
-	}else{
+		}else{
 
-		errorNombre.innerText="Completa el campo Nombre";
-		errorNombre.style.color="red";	
-		e.preventDefault();
-		
-	}
+			errorNombre.innerText="Completa el campo Nombre";
+			errorNombre.style.color="red";	
+			e.preventDefault();
+			
+		}
 		
 	validaApePaterno(e);
 	validaApeMaterno(e);
@@ -58,12 +58,12 @@ let  boton= document.getElementById("btnEnviar");
 			errorPaterno.innerText="Bien Apellido Paterno";
 			errorPaterno.style.color="green";	
 	
-	}else{
-		errorPaterno.innerText="Completa el campo Apellido Paterno";
-		errorPaterno.style.color="red";
-			 	
-		e.preventDefault();
-	}
+		}else{
+			errorPaterno.innerText="Completa el campo Apellido Paterno";
+			errorPaterno.style.color="red";
+				 	
+			e.preventDefault();
+		}
 	}
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -80,13 +80,13 @@ let  boton= document.getElementById("btnEnviar");
 			errorMaterno.innerText="Bien Apellido Materno";
 			errorMaterno.style.color="green";
 
-	}else{
-		
-		errorMaterno.innerText="Completa el campo Apellido Materno";
-			errorMaterno.style.color="red";
-				
-			e.preventDefault();
-	}
+		}else{
+			
+			errorMaterno.innerText="Completa el campo Apellido Materno";
+				errorMaterno.style.color="red";
+					
+				e.preventDefault();
+		}
 	}
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -102,12 +102,12 @@ let  boton= document.getElementById("btnEnviar");
 		errorEdad.innerText="Bien Edad";
 		errorEdad.style.color="green";	
 	
-	}else{
-		errorEdad.innerText="Completa el campo Edad";
-		 errorEdad.style.color="red";	
-		e.preventDefault();
-		
-	}
+		}else{
+			errorEdad.innerText="Completa el campo Edad";
+			 errorEdad.style.color="red";	
+			e.preventDefault();
+			
+		}
 
 	}
 
@@ -126,12 +126,12 @@ let  boton= document.getElementById("btnEnviar");
 			errorEmail.innerText="Bien Email";
 			errorEmail.style.color="green";	
 
-	}else{
-		errorEmail.innerText="Completa el campo Email";
-		 errorEmail.style.color="red";	
-		e.preventDefault();
-		
-	}
+		}else{
+			errorEmail.innerText="Completa el campo Email";
+			 errorEmail.style.color="red";	
+			e.preventDefault();
+			
+		}
 
 	}
 
@@ -148,12 +148,12 @@ let  boton= document.getElementById("btnEnviar");
 			errorTelefono.innerText="Bien Telefono";
 			errorTelefono.style.color="green";	
 
-	}else{
-		
-		errorTelefono.innerText="Completa el campo Telefono";
-		errorTelefono.style.color="red";	
-		e.preventDefault();
-	}
+		}else{
+			
+			errorTelefono.innerText="Completa el campo Telefono";
+			errorTelefono.style.color="red";	
+			e.preventDefault();
+		}
 
 	}
 

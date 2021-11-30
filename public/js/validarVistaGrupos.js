@@ -20,12 +20,12 @@ let  boton= document.getElementById("btnEnviar");
 
 		 
 	
-	}else{
-		errorClave.innerText="Completa el campo Clave";
-		errorClave.style.color="red";	
-		e.preventDefault();
-		
-	}
+		}else{
+			errorClave.innerText="Completa el campo Clave";
+			errorClave.style.color="red";	
+			e.preventDefault();
+			
+		}
 		
 	validaTurnosId(e);
 	validaSemestresId(e);
@@ -68,6 +68,6 @@ let  boton= document.getElementById("btnEnviar");
 			  errorSemestresId.innerText="Bien Semestres1";
 			  errorSemestresId.style.color="green";
 				
-		 }
+		}
 
 	}

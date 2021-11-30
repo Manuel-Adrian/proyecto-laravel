@@ -21,7 +21,7 @@
                         </div>
                 @enderror
             </div>
-        <!--------------------------------------------------------------------------------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------------------------->
             <div class="form-control">
                   <label class="form-label" >Estudiantes</label>
                   <select class="form-select" name="estudiantes_id" required id="estudiantes_id">

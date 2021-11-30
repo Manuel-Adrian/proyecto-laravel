@@ -20,14 +20,15 @@
                     <td>{{ $grupoEstudiante->nombre}} {{ $grupoEstudiante->apellido_paterno}}
                     {{ $grupoEstudiante->apellido_materno}}</td>
                     <td> 
-                    <form action="{{ route('eliminarGrupoEstudiante',$grupoEstudiante->id) }}" method="POST">
-                        <a href="{{ route('editarGrupoEstudiante',$grupoEstudiante->id) }}" class="btn btn-warning btn-sm">Editar</a>
-                        @csrf
-                        <input type="submit" value="Eliminar" class="btn btn-danger btn-sm"> <br>
+                        <form action="{{ route('eliminarGrupoEstudiante',$grupoEstudiante->id) }}" method="POST">
+                            <a href="{{ route('editarGrupoEstudiante',$grupoEstudiante->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                            @csrf
+                            <input type="submit" value="Eliminar" class="btn btn-danger btn-sm"> 
+                        </form><br>
                     </td>
                 </tr>
             @endforeach    
         </tbody>
     </table>
-                    </form>
+                    
 @endsection

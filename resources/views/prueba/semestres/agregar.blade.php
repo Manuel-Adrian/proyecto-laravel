@@ -8,14 +8,18 @@
                 <label  class="form-label" style="font-size: 25px;">INGRESE UN SEMESTRE</label>
             </div>
             <div class="form-group mx-sm-4 mb-2">
-                <input type="text" class="form-control text-uppercase" style="font-size: 20px;" placeholder="Nuevo Semestre" 
-                name="grado"  id="grado" required pattern="[A-Za-z,ñ,ü,á,é,í,ó,ú,Á,É,Í,Ó,Ú  ]{3,20}" value="{{ old('grado') }}">
+                <input type="text" class="form-control text-uppercase" 
+                    style="font-size: 20px;" placeholder="Nuevo Semestre" 
+                    name="grado"  id="grado" 
+                    required pattern="[A-Za-z,ñ,ü,á,é,í,ó,ú,Á,É,Í,Ó,Ú  ]{3,20}" 
+                    value="{{ old('grado') }}"
+                >
                 <span id=errorGrado></span>
                 @error('grado')
                         <div class="alert alert-danger">
                             {{ $message }} <br>
                         </div>
-                    @enderror
+                @enderror
             </div>
             <button type="submit" class="btn btn-success mb-2" id="btnEnviar">CONFIRMAR</button>
             <a href="{{ route('listaSemestre') }}" class="btn btn-light mb-2">CANCELAR</a>
